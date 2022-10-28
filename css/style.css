@@ -1,0 +1,52 @@
+/*
+    Import Fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+}
+
+body .navbar {
+    font-family: 'Mukta', sans-serif;
+    background-image: url("../img/inflation.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body:not(.navbar) {
+    margin-top: 5%;
+}
+
+.container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.image {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    margin-left: 55%;
+}
+
+.text {
+    font-size: 18px;
+    color: #000000;
+}
+
+#text1 {
+    margin-top: 5%;
+    width: 50%;
+}
+
+#print-money {
+    margin-left: 60%;
+    position: absolute;
+}

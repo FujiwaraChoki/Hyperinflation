@@ -59,10 +59,13 @@
                     <?php
                         echo get_text();
                     ?>
-                  <p>
-                    <?php
-
-                    ?>
+                    asdasd<br/>
+                    asdasd<br/>
+                    asdasd<br/>
+                    asdasd<br/>
+                    asdasd<br/>
+                    asdasd<br/>
+                    asdasd<br/>
                   </p>
                 </div>
             </div>
