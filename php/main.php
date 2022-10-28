@@ -47,3 +47,22 @@ function get_article_by_identifier($subject) {
     $content = $data['inhalt'];
     return [$identifier, $title, $content];
 }
+
+function search($query) {
+    global $db;
+    $sql = "SELECT * FROM informationen WHERE titel LIKE ? OR inhalt LIKE ?";
+    $stmt = $db->prepare($sql);
+    $query = "%$query%";
+    $stmt->bind_param("ss", $query, $query);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $titles = [];
+    $contents = [];
+    $identifiers = [];
+    while ($row = $result->fetch_assoc()) {
+        array_push($titles, $row['titel']);
+        array_push($contents, $row['inhalt']);
+        array_push($identifiers, $row['identifier']);
+    }
+    return [$titles, $contents, $identifiers];
+}

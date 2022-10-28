@@ -8,6 +8,9 @@
         $_SESSION['identifier'] = $res[0];
         $_SESSION['title'] = $res[1];
         $_SESSION['content'] = $res[2];
+    } elseif(isset($_GET['q'])) {
+        $query = $_GET['q'];
+
     }
 
 ?>

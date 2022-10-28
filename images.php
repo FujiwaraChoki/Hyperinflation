@@ -55,7 +55,7 @@
               <div class="col-md-12">
                   <h1>Bildersammlung</h1>
                   <hr />
-                    <img style="width: 40%;" src="https://www.mein-lernen.at/images/hyperinflation.jpeg" alt="Bild-1" title="https://www.mein-lernen.at/images/hyperinflation.jpeg">
+                    <img style="width: 40%;" src="https://www.mein-lernen.at/images/hyperinflation.jpeg" alt="Bild-1" title="Quelle: https://www.mein-lernen.at/images/hyperinflation.jpeg">
                 </div>
             </div>
         </div>
