@@ -50,19 +50,25 @@ function get_article_by_identifier($subject) {
 
 function search($query) {
     global $db;
-    $sql = "SELECT * FROM informationen WHERE titel LIKE ? OR inhalt LIKE ?";
+    $query = str_replace("+", " ", $query);
+    $sql = "SELECT * FROM informationen WHERE titel LIKE ? or identifier LIKE ?";
     $stmt = $db->prepare($sql);
-    $query = "%$query%";
     $stmt->bind_param("ss", $query, $query);
     $stmt->execute();
     $result = $stmt->get_result();
     $titles = [];
     $contents = [];
     $identifiers = [];
-    while ($row = $result->fetch_assoc()) {
-        array_push($titles, $row['titel']);
-        array_push($contents, $row['inhalt']);
-        array_push($identifiers, $row['identifier']);
+    $i = 0;
+    // For every result, add the title, content and identifier to the array
+    while ($data = $result->fetch_assoc()) {
+        $identifier = $data['identifier'];
+        $title = $data['titel'];
+        $content = $data['inhalt'];
+        $identifiers[$i] = $identifier;
+        $titles[$i] = $title;
+        $contents[$i] = $content;
+        $i++;
     }
-    return [$titles, $contents, $identifiers];
+    return [$identifiers, $titles, $contents];
 }
