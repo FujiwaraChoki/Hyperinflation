@@ -9,11 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hyperinflation</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-primary">
         <a class="navbar-brand" href="#">Hyperinflation</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -53,27 +54,11 @@
               <div class="col-md-12">
                   <h1>Die Hyperinflation von 1923</h1>
                   <h5 class="font-italic">Die Inflation, die die Welt verändert hat.</h5>
-                  <img class="image" src="inflation.png" alt="Bild der Folgen">
-                  <p id="text1">Die Hyperinflation von 1923 war eine Inflation in Deutschland,
-                      die in der Zeit von 1921 bis 1923 stattfand.
-                      Sie wurde durch die Währungsreform von 1923,
-                      die Einführung des Rentenmark, beendet.
-                      Die Inflation war die Folge einer starken Wirtschaftskrise,
-                      die durch eine hohe Arbeitslosigkeit, eine hohe Inflation und
-                      einen Rückgang der Wirtschaftsleistung gekennzeichnet war.
-                      Die Inflation war eine der größten in der Geschichte der Menschheit.
-                      Sie wurde von den meisten deutschen Zeitungen als
-                      „Wirtschaftskrise“ bezeichnet, die von der Regierung ignoriert wurde.
-                      Die Folgen der Inflation waren so groß, dass sie die Weimarer Republi
-                      in Deutschland zerstörte und den Weg für den Nationalsozialismus ebnete.
-                      Die Inflation hatte auch einen großen Einfluss auf die Weltwirtschaft,
-                      da sie die Inflation in anderen Ländern wie Österreich und der
-                      Tschechoslowakei verursachte. Die Inflation war auch ein Grund für
-                      die Weltwirtschaftskrise von 1929, da sie die Weltwirtschaftskrise
-                      von 1929 verursachte. Die Inflation führte zu einer weltweiten Depression,
-                      die als „große Depression“ bekannt ist. Die Inflation war eine der
-                      größten in der Geschichte der Menschheit und hatte einen großen Einfluss
-                      auf die Weltwirtschaft.</p>
+                  <p id="text1" class="text">
+                      <lottie-player id='print-money' src='https://assets8.lottiefiles.com/packages/lf20_fRPHWv.json'  background='transparent'  speed='1'  style='width: 300px; height: 300px;'  loop  autoplay></lottie-player>
+                    <?php
+                        echo get_text();
+                    ?>
                   <p>
                     <?php
 
