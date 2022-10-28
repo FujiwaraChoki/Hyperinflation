@@ -36,16 +36,16 @@
                     Themen
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="page?subject=wmrpblk">Weimarer Republik</a>
-                    <a class="dropdown-item" href="page?subject=hyperinflationDesc">Was ist eine Hyperinflation?</a>
+                    <a class="dropdown-item" href="page?q=wmrpblk">Weimarer Republik</a>
+                    <a class="dropdown-item" href="page?q=hyperinflationDesc">Was ist eine Hyperinflation?</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                    <a class="dropdown-item" href="assets/pdf/Credits.pdf">Credits & Copyright</a>
                 </div>
             </li>
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <form class="form-inline my-2 my-lg-0" method="get" action="search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Suchen" aria-label="Suchen" name="q">
+            <button class="btn btn-outline-success my-2 my-sm-0 searchButton" type="submit">Suchen</button>
           </form>
         </div>
       </nav>
