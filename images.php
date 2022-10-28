@@ -51,17 +51,11 @@
       </nav>
 
       <div class="container">
-          <div class="v1"></div>
           <div class="row">
               <div class="col-md-12">
-                  <h1>Die Hyperinflation von 1923</h1>
-                  <h5 class="font-italic">Die Inflation, die die Welt verändert hat.</h5>
-                  <p id="text1" class="text">
-                      <lottie-player id='print-money' src='https://assets8.lottiefiles.com/packages/lf20_fRPHWv.json'  background='transparent'  speed='1'  style='width: 300px; height: 300px;'  loop  autoplay></lottie-player>
-                    <?php
-                        echo get_text_by_id(1);
-                    ?>
-                  </p>
+                  <h1>Bildersammlung</h1>
+                  <hr />
+                    <img style="width: 40%;" src="https://www.mein-lernen.at/images/hyperinflation.jpeg" alt="Bild-1" title="https://www.mein-lernen.at/images/hyperinflation.jpeg">
                 </div>
             </div>
         </div>
