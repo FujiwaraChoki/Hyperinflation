@@ -20,11 +20,16 @@ if ($db->connect_errno) {
     exit();
 }
 
+/*
+ * Functions
+*/
 
-
-function get_text() {
+function get_text_by_id($id_input) {
     global $db;
-    $sql = "SELECT * FROM informationen";
-    $result = $db->query($sql);
+    $sql = "SELECT * FROM informationen WHERE id = ?";
+    $stmt = $db->prepare($sql);
+    $stmt->bind_param("i", $id_input);
+    $stmt->execute();
+    $result = $stmt->get_result();
     return $result->fetch_assoc()['inhalt'];
 }

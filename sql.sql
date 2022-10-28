@@ -7,6 +7,7 @@ CREATE TABLE informationen
     id     INT  NOT NULL AUTO_INCREMENT,
     inhalt TEXT NOT NULL,
     PRIMARY KEY (id)
+
 );
 
 INSERT INTO informationen

@@ -1,4 +1,6 @@
 <?php
+    // Turn of error reporting
+    error_reporting(0);
     include_once("php/main.php");
 ?>
 
@@ -12,6 +14,7 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-primary">
@@ -26,10 +29,18 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Start</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="img/">Bilder</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Themen
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="page?subject=wmrpblk">Weimarer Republik</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -38,7 +49,9 @@
           </form>
         </div>
       </nav>
+
       <div class="container">
+          <div class="v1"></div>
           <div class="row">
               <div class="col-md-12">
                   <h1>Die Hyperinflation von 1923</h1>
@@ -46,15 +59,8 @@
                   <p id="text1" class="text">
                       <lottie-player id='print-money' src='https://assets8.lottiefiles.com/packages/lf20_fRPHWv.json'  background='transparent'  speed='1'  style='width: 300px; height: 300px;'  loop  autoplay></lottie-player>
                     <?php
-                        echo get_text();
+                        echo get_text_by_id(1);
                     ?>
-                    asdasd<br/>
-                    asdasd<br/>
-                    asdasd<br/>
-                    asdasd<br/>
-                    asdasd<br/>
-                    asdasd<br/>
-                    asdasd<br/>
                   </p>
                 </div>
             </div>
