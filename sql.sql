@@ -62,4 +62,13 @@ der keine Mittel gegen die wirtschaftliche und politische Krise fand.");
 INSERT INTO informationen
 (identifier, titel, inhalt)
 VALUES ("hyperinflationDesc", "Was ist eine Hyperinflation?",
-"Hyperinflation ist eine Form der Inflation, in der sich das Preisniveau sehr schnell erhöht. Eine allgemein akzeptierte Definition existiert nicht, eine 1956 von Phillip D. Cagan aufgestellte Faustregel[1] von monatlichen Inflationsraten von 50 % (entsprechend einer jährlichen Rate von umgerechnet rund 13.000 %) ist aber weit verbreitet. Vereinfacht ausgedrückt ist eine Hyperinflation eine unkontrollierbare Inflation mit extrem hoher monatlicher Rate. Meist dauern Hyperinflationen nur eine kurze Zeit und enden in einer Währungsreform.");
+"Hyperinflation ist eine Form der Inflation,
+in der sich das Preisniveau sehr schnell erhöht.
+Eine allgemein akzeptierte Definition existiert nicht,
+eine 1956 von Phillip D. Cagan aufgestellte Faustregel
+von monatlichen Inflationsraten von 50 %
+(entsprechend einer jährlichen Rate von umgerechnet rund 13.000 %)
+ist aber weit verbreitet. Vereinfacht ausgedrückt ist eine Hyperinflation
+eine unkontrollierbare Inflation mit extrem hoher monatlicher Rate.
+Meist dauern Hyperinflationen nur eine kurze Zeit und enden in einer
+Währungsreform.");

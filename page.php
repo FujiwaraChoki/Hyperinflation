@@ -1,15 +1,13 @@
 <?php
     // Turn of error reporting
     include_once("php/main.php");
-
+    error_reporting(1);
     if (isset($_GET['subject'])) {
         $subject = $_GET['subject'];
-        if ($subject == "wmrpblk") {
-            $res = get_article_by_identifier("wmrpblk");
-            $_SESSION['identifier'] = $res[0];
-            $_SESSION['title'] = $res[1];
-            $_SESSION['content'] = $res[2];
-        }
+        $res = get_article_by_identifier($subject);
+        $_SESSION['identifier'] = $res[0];
+        $_SESSION['title'] = $res[1];
+        $_SESSION['content'] = $res[2];
     }
 
 ?>
