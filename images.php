@@ -4,7 +4,7 @@
     include_once("php/main.php");
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE html>''
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -56,7 +56,7 @@
                   <h1>Bildersammlung</h1>
                   <hr />
                   <img style="width: 40%;" src="https://www.mein-lernen.at/images/hyperinflation.jpeg" alt="Bild-1" title="Quelle: https://www.mein-lernen.at/images/hyperinflation.jpeg">
-                  <img style="width: 40%;" src="https://www.mein-lernen.at/images/hyperinflation2.jpeg" alt="Bild-2" title="Quelle: https://www.mein-lernen.at/images/hyperinflation2.jpeg">
+                  <img style="width: 40%;" src="https://www.tagesspiegel.de/gesellschaft/images/inflatiobild/alternates/BASE_21_9_W1000/inflatiobild.jpeg" alt="Bild-2" title="Quelle: https://www.tagesspiegel.de/gesellschaft/images/inflatiobild/alternates/BASE_21_9_W1000/inflatiobild.jpeg">
               </div>
             </div>
         </div>

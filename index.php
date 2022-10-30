@@ -1,6 +1,5 @@
 <?php
     // Turn off error reporting
-    error_reporting(0);
     include_once("php/main.php");
 ?>
 
