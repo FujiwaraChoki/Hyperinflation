@@ -4,7 +4,7 @@
     include_once("php/main.php");
 ?>
 
-<!DOCTYPE html>''
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -44,7 +44,7 @@
             </li>
           </ul>
         <form class="form-inline my-2 my-lg-0" method="get">
-            <input class="form-control mr-sm-2" type="search" placeholder="Suchen" aria-label="Suchen" name="q">
+            <input class="form-control mr-sm-2" type="search" placeholder="Artikel suchen" aria-label="Artikel suchen" name="q">
             <button class="btn btn-outline-success my-2 my-sm-0 searchButton" type="submit">Suchen</button>
         </form>
         </div>
@@ -55,8 +55,19 @@
               <div class="col-md-12">
                   <h1>Bildersammlung</h1>
                   <hr />
-                  <img style="width: 40%;" src="https://www.mein-lernen.at/images/hyperinflation.jpeg" alt="Bild-1" title="Quelle: https://www.mein-lernen.at/images/hyperinflation.jpeg">
-                  <img style="width: 40%;" src="https://www.tagesspiegel.de/gesellschaft/images/inflatiobild/alternates/BASE_21_9_W1000/inflatiobild.jpeg" alt="Bild-2" title="Quelle: https://www.tagesspiegel.de/gesellschaft/images/inflatiobild/alternates/BASE_21_9_W1000/inflatiobild.jpeg">
+                  <div>
+                      <img style="width: 40%; height: auto;" src="https://www.mein-lernen.at/images/hyperinflation.jpeg" alt="Bild-1" title="Quelle: https://www.mein-lernen.at/images/hyperinflation.jpeg">
+                      <p>
+                          Eine normale Familie zählt ihr Geld in der Hyperinflation.
+                      </p>
+                  </div>
+                  <hr />
+                  <div>
+                      <img style="width: 40%; height: auto;" src="https://www.tagesspiegel.de/gesellschaft/images/inflatiobild/alternates/BASE_21_9_W1000/inflatiobild.jpeg" alt="Bild-2" title="Quelle: https://www.tagesspiegel.de/gesellschaft/images/inflatiobild/alternates/BASE_21_9_W1000/inflatiobild.jpeg">
+                      <p>
+                          Die Polizei der Weimarer Republik stopft ein Haufen Geld in einen Topf.
+                      </p>
+                  </div>
               </div>
             </div>
         </div>
