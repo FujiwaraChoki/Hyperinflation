@@ -55,8 +55,9 @@
               <div class="col-md-12">
                   <h1>Bildersammlung</h1>
                   <hr />
-                    <img style="width: 40%;" src="https://www.mein-lernen.at/images/hyperinflation.jpeg" alt="Bild-1" title="Quelle: https://www.mein-lernen.at/images/hyperinflation.jpeg">
-                </div>
+                  <img style="width: 40%;" src="https://www.mein-lernen.at/images/hyperinflation.jpeg" alt="Bild-1" title="Quelle: https://www.mein-lernen.at/images/hyperinflation.jpeg">
+                  <img style="width: 40%;" src="https://www.mein-lernen.at/images/hyperinflation2.jpeg" alt="Bild-2" title="Quelle: https://www.mein-lernen.at/images/hyperinflation2.jpeg">
+              </div>
             </div>
         </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
